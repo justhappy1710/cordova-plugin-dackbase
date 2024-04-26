@@ -1,0 +1,37 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-dackbase"
+      version="3.0.0">
+
+    <name>cordova-plugin-dackbase</name>
+    <description>Cordova plugin to get Dack Game User Id</description>
+    <license>MIT</license>
+    <keywords>cordova</keywords>
+    <repo>https://github.com/justhappy1710/cordova-plugin-dackbase</repo>
+    <issue>https://github.com/justhappy1710/cordova-plugin-dackbase/issues</issue>
+
+    <js-module src="www/dackbase.js" name="dackbase">
+        <merges target="cordova.plugins.dackbase" />
+    </js-module>
+
+    <engines>
+        <engine name="cordova" version=">=7.1.0"/>
+        <engine name="cordova-android" version=">=7.0.0"/>
+        <engine name="cordova-ios" version=">=4.3.0"/>
+    </engines>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="dackbase">
+                <param name="android-package" value="com.dack.cordova.advertising.DackbasePlugin" />
+            </feature>
+        </config-file>
+
+        <dependency id="cordova-support-android-plugin" version="~2.0.4"/>
+
+        <source-file src="src/android/DackbasePlugin.java"
+            target-dir="src/com/dack/cordova/advertising/" />
+    </platform>
+
+</plugin>

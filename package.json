@@ -1,0 +1,39 @@
+{
+  "name": "cordova-plugin-idfa",
+  "version": "3.0.0",
+  "description": "Cordova plugin for getting Advertising ID (IDFA or AAID)",
+  "types": "./types/index.d.ts",
+  "cordova": {
+    "id": "cordova-plugin-idfa",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justhappy1710/cordova-plugin-dackbase.git"
+  },
+  "author": "Justin Happy <justhappy1710@gmail.com> (https://github.com/justhappy1710)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justhappy1710/cordova-plugin-dackbase/issues"
+  },
+  "homepage": "https://github.com/justhappy1710/cordova-plugin-dackbase#readme",
+  "funding": "https://github.com/justhappy1710/cordova-plugin-dackbase?sponsor=1",
+  "keywords": [
+    "cordova",
+    "Construct3",
+    "Dackbase",
+    "Dack",
+    "Cash Pappa",
+    "analytics",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "scripts": {
+    "version": "perl -p -i -e 's/(version=)\"\\d+\\.\\d+\\.\\d+\"/$1\"'$npm_package_version'\"$2/' plugin.xml && git add plugin.xml",
+    "postversion": "git push && git push --tags"
+  }
+}
