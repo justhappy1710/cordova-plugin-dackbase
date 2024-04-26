@@ -1,4 +1,4 @@
-# Cordova plugin for getting DAck Base infor (game user Id)
+# Cordova plugin for getting Dack Base info such as game user Id
 
 [![NPM version][npm-version]][npm-url] [![NPM downloads][npm-downloads]][npm-url] [![NPM total downloads][npm-total-downloads]][npm-url] [![PayPal donate](https://img.shields.io/badge/paypal-donate-ff69b4?logo=paypal)][donate-url] [![Twitter][twitter-follow]][twitter-url]
 
